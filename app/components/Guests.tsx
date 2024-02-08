@@ -1,8 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import { ElfsightWidget } from "react-elfsight-widget";
-import bookingImg from "../assets/images/guests/bookinglogo-150x142.webp";
-import airbnbImg from "../assets/images/guests/airbnblogo-150x142.webp";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { RiDoubleQuotesR } from "react-icons/ri";
 import MotionX from "../ui/MotionX";
@@ -36,10 +34,16 @@ export default function Guests() {
                   className="booking"
                   onClick={() => setToggle("booking")}
                 >
-                  <Image src={bookingImg} alt="booking" />
+                  <Image
+                    src="../assets/images/guests/bookinglogo-150x142.webp"
+                    alt="booking"
+                  />
                 </button>
                 <button className="airbnb" onClick={() => setToggle("airbnb")}>
-                  <Image src={airbnbImg} alt="airbnb" />
+                  <Image
+                    src="../assets/images/guests/airbnblogo-150x142.webp"
+                    alt="airbnb"
+                  />
                 </button>
 
                 {/* arrow */}

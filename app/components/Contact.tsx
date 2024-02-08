@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FiMail } from "react-icons/fi";
-import image from "../assets/images/contact/contact.webp";
+
 import { TypeAnimation } from "react-type-animation";
 import MotionX from "../ui/MotionX";
 import ImageLoading from "../ui/ImageLoading";
@@ -32,7 +32,7 @@ export default function Contact() {
                 <Image
                   onLoad={() => setLoading(false)}
                   className={`w-full h-full ${loading ? "hidden" : ""}`}
-                  src={image}
+                  src="../assets/images/contact/contact.webp"
                   alt="image"
                 />
               </div>

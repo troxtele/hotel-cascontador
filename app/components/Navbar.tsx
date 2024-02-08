@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-import logo from "../assets/images/logo.webp";
-
 const navItems = [
   { id: "calendar", name: "calendar", link: "/#calendar" },
   { id: "gallery", name: "gallery", link: "/#gallery" },
@@ -80,7 +78,7 @@ export default function Navbar({
                     ? "max-h-[1.8rem] lg:max-h-[2.1rem]"
                     : "max-h-[2.5rem] lg:max-h-[3rem]"
                 }`}
-                src={logo}
+                src="../assets/images/logo.webp"
                 alt="logo"
               />
             </a>
@@ -169,7 +167,11 @@ export default function Navbar({
         >
           <div className="wrapper">
             <a href="/" className="logo block pt-6 px-6">
-              <Image className="w-full max-w-[12rem]" src={logo} alt="logo" />
+              <Image
+                className="w-full max-w-[12rem]"
+                src="../assets/images/logo.webp"
+                alt="logo"
+              />
             </a>
 
             <ul className="flex flex-col justify-start text-sm mt-6">

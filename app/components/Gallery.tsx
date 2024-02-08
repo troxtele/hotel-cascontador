@@ -27,7 +27,6 @@ const outdoorImages = galleryImages.slice(0, 14);
 export default function Gallery() {
   const [active, setActive] = useState(true);
 
- 
   const [activePopup, setActivePopup] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const [loading, setLoading] = useState(true);
@@ -212,7 +211,11 @@ export default function Gallery() {
       <ImagePopup
         setActive={setActivePopup}
         active={activePopup}
-        images={active ? outdoorImages.map(image => image.src) : indoorImages.map(image => image.src)}
+        images={
+          active
+            ? outdoorImages.map((image) => image)
+            : indoorImages.map((image) => image)
+        }
         index={activeIndex}
       />
     </section>

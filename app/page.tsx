@@ -7,12 +7,12 @@ import Hero from "./components/Hero";
 // import Room from "./components/Room";
 // // import Calendar from "./components/Calendar";
 // import Contact from "./components/Contact";
-// import Map from "./components/Map";
-// import Footer from "./components/Footer";
+import Map from "./components/Map";
+import Footer from "./components/Footer";
 // import Guests from "./components/Guests";
 // import { lazy, Suspense } from "react";
 // import LoadingAnimation from "./ui/LoadingAnimation";
-// import Whatsapp from "./components/Whatsapp";
+import Whatsapp from "./components/Whatsapp";
 // import BookNow from "./components/BookNow";
 
 // const Calendar = lazy(() => import("./components/Calendar"));
@@ -39,10 +39,10 @@ function App() {
         <Room />
         <Guests />
         <Contact />
-      </div>
+      </div> */}
       <Map />
       <Footer />
-      <Whatsapp /> */}
+      <Whatsapp />
     </>
   );
 }

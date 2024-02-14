@@ -1,5 +1,4 @@
 import { useRef } from "react";
-// import video from "../assets/video/hero.mp4";
 
 import { RiArrowDownDoubleLine } from "react-icons/ri";
 
@@ -11,17 +10,22 @@ export default function Hero() {
       {/* background */}
       <div className="bg-video after:absolute after:bg-black/50 after:h-full after:w-full after:inset-0 h-screen">
         <video
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover video"
+          height={1080}
+          width={1920}
           poster="../assets/video/poster.webp"
           ref={videoRef}
           autoPlay
           muted
           loop
-          id="myVideo"
         >
-          <source src="../assets/video/hero.mp4" type="video/mp4" />
+          <source src="/hero.mp4" type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>
+
+        {/* <video autoPlay muted loop className="video">
+          <source src="/hero.mp4" type="video/mp4" />
+        </video> */}
       </div>
       <div className="container">
         <div className="content absolute left-1/2 top-[40%] transform -translate-x-1/2 -translate-y-1/2 text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-semibold text-white w-full flex flex-col justify-center items-center max-w-screen px-5 font-Montserrat">

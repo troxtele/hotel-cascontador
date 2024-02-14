@@ -2,7 +2,7 @@
 import { useRef } from "react";
 import "./app.css";
 import Navbar from "./components/Navbar";
-// import Hero from "./components/Hero";
+import Hero from "./components/Hero";
 // import Gallery from "./components/Gallery";
 // import Room from "./components/Room";
 // // import Calendar from "./components/Calendar";
@@ -23,8 +23,8 @@ function App() {
   return (
     <>
       <Navbar sections={sections} />
-      {/* <Hero />
-      <div ref={sections}>
+      <Hero />
+      {/* <div ref={sections}>
         <Suspense
           fallback={
             <div className="container">

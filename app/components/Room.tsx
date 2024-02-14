@@ -1,9 +1,9 @@
 import { RiHotelBedFill } from "react-icons/ri";
 
-const roomImgOne = "../assets/images/algaida/algaida_retratos_lq-33.webp";
-const roomImgTwo = "../assets/images/algaida/algaida_retratos_lq-35.webp";
-const roomImgThree = "../assets/images/algaida/algaida_retratos_lq-43.webp";
-const roomImgFour = "../assets/images/algaida/algaida_retratos_lq-63.webp";
+const roomImgOne = "/assets/images/algaida/algaida_retratos_lq-33.webp";
+const roomImgTwo = "/assets/images/algaida/algaida_retratos_lq-35.webp";
+const roomImgThree = "/assets/images/algaida/algaida_retratos_lq-43.webp";
+const roomImgFour = "/assets/images/algaida/algaida_retratos_lq-63.webp";
 import MotionX from "../ui/MotionX";
 import FadeIn from "../ui/fadeIn";
 

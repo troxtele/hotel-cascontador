@@ -133,6 +133,7 @@ export default function Gallery() {
                     >
                       {loading ? <LoadingAnimation /> : <></>}
                       <Image
+                        fill
                         onLoad={() => setLoading(false)}
                         className={`w-[inherit] h-[inherit] ${
                           loading ? "hidden" : ""
@@ -191,6 +192,7 @@ export default function Gallery() {
                         onClick={() => setActivePopup(true)}
                       >
                         <Image
+                          fill
                           className="h-[inherit] w-[inherit]"
                           src={image}
                           alt={`indoor-image-${index}`}
@@ -208,7 +210,8 @@ export default function Gallery() {
       </div>
 
       {/* popup */}
-      <ImagePopup
+      <Image
+        fillPopup
         setActive={setActivePopup}
         active={activePopup}
         images={

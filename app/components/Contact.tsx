@@ -28,11 +28,12 @@ export default function Contact() {
           <div className="left">
             <FadeIn>
               <div className="img">
-                {loading ? <ImageLoading /> : <></>}
+                {loading ? <Image fillLoading /> : <></>}
                 <Image
+                  fill
                   onLoad={() => setLoading(false)}
                   className={`w-full h-full ${loading ? "hidden" : ""}`}
-                  src="../assets/images/contact/contact.webp"
+                  src="/assets/images/contact/contact.webp"
                   alt="image"
                 />
               </div>

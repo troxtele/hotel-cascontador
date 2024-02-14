@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import logo from "../assets/images/logo.webp";
 
 const navItems = [
   { id: "calendar", name: "calendar", link: "/#calendar" },
@@ -73,12 +74,12 @@ export default function Navbar({
               className="main-logo flex justify-center items-center gap-1 py-2.5 sm:py-5 min-h-full"
             >
               <Image
-                className={`transition-all duration-500  ${
+                className={`transition-all duration-500 h-full w-full  ${
                   scrolled
                     ? "max-h-[1.8rem] lg:max-h-[2.1rem]"
                     : "max-h-[2.5rem] lg:max-h-[3rem]"
                 }`}
-                src="../assets/images/logo.webp"
+                src={logo}
                 alt="logo"
               />
             </a>
@@ -168,8 +169,9 @@ export default function Navbar({
           <div className="wrapper">
             <a href="/" className="logo block pt-6 px-6">
               <Image
+                fill
                 className="w-full max-w-[12rem]"
-                src="../assets/images/logo.webp"
+                src="/assets/images/logo.webp"
                 alt="logo"
               />
             </a>

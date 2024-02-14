@@ -23,7 +23,6 @@ export default function ImagePopup({
   index: number;
   setActive: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
-
   const swiperRef = useRef() as any;
   const [data, setData] = useState<string[]>([]);
 
@@ -68,7 +67,7 @@ export default function ImagePopup({
         >
           {data?.map((item, i) => (
             <SwiperSlide key={index + i} className="w-full">
-              <Image className="w-full" src={item} alt="" />
+              <Image fill className="w-full" src={item} alt="" />
             </SwiperSlide>
           ))}
         </Swiper>

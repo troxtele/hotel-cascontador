@@ -123,16 +123,15 @@ export default function Gallery() {
                   <SwiperSlide
                     key={index}
                     onClick={() => setActiveIndex(index)}
-                    className=" rounded-sm overflow-hidden"
+                    className="rounded-sm overflow-hidden"
                   >
                     <div
                       className="image h-full w-full"
                       onClick={() => setActivePopup(true)}
                     >
-         
                       <Image
-                        fill
-                    
+                        height={1067}
+                        width={1600}
                         className={`w-[inherit] h-[inherit]`}
                         src={image}
                         alt={`outdoor-image-${index}`}
@@ -188,7 +187,8 @@ export default function Gallery() {
                         onClick={() => setActivePopup(true)}
                       >
                         <Image
-                          fill
+                          height={1067}
+                          width={1600}
                           className="h-[inherit] w-[inherit]"
                           src={image}
                           alt={`indoor-image-${index}`}

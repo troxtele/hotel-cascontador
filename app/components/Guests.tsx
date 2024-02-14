@@ -34,10 +34,20 @@ export default function Guests() {
                   className="booking"
                   onClick={() => setToggle("booking")}
                 >
-                  <Image fill src={bookingImg} alt="booking" />
+                  <Image
+                    width={150}
+                    height={146}
+                    src={bookingImg}
+                    alt="booking"
+                  />
                 </button>
                 <button className="airbnb" onClick={() => setToggle("airbnb")}>
-                  <Image fill src={airbnbImg} alt="airbnb" />
+                  <Image
+                    width={150}
+                    height={146}
+                    src={airbnbImg}
+                    alt="airbnb"
+                  />
                 </button>
 
                 {/* arrow */}

@@ -3,19 +3,19 @@ import { useRef } from "react";
 import "./app.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-// import Gallery from "./components/Gallery";
-// import Room from "./components/Room";
-// // import Calendar from "./components/Calendar";
-// import Contact from "./components/Contact";
+import Gallery from "./components/Gallery";
+import Room from "./components/Room";
+// import Calendar from "./components/Calendar";
+import Contact from "./components/Contact";
 import Map from "./components/Map";
 import Footer from "./components/Footer";
-// import Guests from "./components/Guests";
-// import { lazy, Suspense } from "react";
-// import LoadingAnimation from "./ui/LoadingAnimation";
+import Guests from "./components/Guests";
+import { lazy, Suspense } from "react";
+import LoadingAnimation from "./ui/LoadingAnimation";
 import Whatsapp from "./components/Whatsapp";
-// import BookNow from "./components/BookNow";
+import BookNow from "./components/BookNow";
 
-// const Calendar = lazy(() => import("./components/Calendar"));
+const Calendar = lazy(() => import("./components/Calendar"));
 
 function App() {
   const sections = useRef<HTMLDivElement | null>(null);
@@ -24,7 +24,7 @@ function App() {
     <>
       <Navbar sections={sections} />
       <Hero />
-      {/* <div ref={sections}>
+      <div ref={sections}>
         <Suspense
           fallback={
             <div className="container">
@@ -39,7 +39,7 @@ function App() {
         <Room />
         <Guests />
         <Contact />
-      </div> */}
+      </div>
       <Map />
       <Footer />
       <Whatsapp />

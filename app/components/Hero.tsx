@@ -1,18 +1,17 @@
-import poster from "../assets/video/poster.webp";
+import posterImg from "../assets/video/poster.webp";
 
 import { RiArrowDownDoubleLine } from "react-icons/ri";
-type Props = {
-  poster?: string;
-};
 
-export default function Hero({ poster }: Props) {
+
+
+export default function Hero() {
   return (
     <section id="hero" className="hero relative overflow-hidden">
       {/* background */}
       <div className="bg-video after:absolute after:bg-black/50 after:h-full after:w-full after:inset-0 h-screen">
         <video
           className="h-full w-full object-cover video"
-          poster={poster}
+         
           autoPlay
           muted
           loop

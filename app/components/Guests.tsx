@@ -3,12 +3,12 @@ import Image from "next/image";
 import { ElfsightWidget } from "react-elfsight-widget";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { RiDoubleQuotesR } from "react-icons/ri";
+import bookingImg from "../assets/images/guests/bookinglogo-150x142.webp";
+import airbnbImg from "../assets/images/guests/airbnblogo-150x142.webp";
 import MotionX from "../ui/MotionX";
-// import LoadingAnimation from "../ui/LoadingAnimation";
+
 import FadeIn from "../ui/fadeIn";
 export default function Guests() {
-  // const [loading, setLoading] = useState(false);
-
   const [toggle, setToggle] = useState("booking"); // ["booking", "airbnb"]
 
   return (
@@ -34,18 +34,10 @@ export default function Guests() {
                   className="booking"
                   onClick={() => setToggle("booking")}
                 >
-                  <Image
-                    fill
-                    src="/assets/images/guests/bookinglogo-150x142.webp"
-                    alt="booking"
-                  />
+                  <Image fill src={bookingImg} alt="booking" />
                 </button>
                 <button className="airbnb" onClick={() => setToggle("airbnb")}>
-                  <Image
-                    fill
-                    src="/assets/images/guests/airbnblogo-150x142.webp"
-                    alt="airbnb"
-                  />
+                  <Image fill src={airbnbImg} alt="airbnb" />
                 </button>
 
                 {/* arrow */}

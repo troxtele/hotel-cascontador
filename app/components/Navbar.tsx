@@ -173,7 +173,7 @@ export default function Navbar({
               <Image
                 fill
                 className="w-full max-w-[12rem]"
-                src="/assets/images/logo.webp"
+                src={navLogo}
                 alt="logo"
               />
             </a>

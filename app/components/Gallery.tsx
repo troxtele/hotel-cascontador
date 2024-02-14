@@ -18,7 +18,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // impo"t "swiper/css/effect-"ade";
 import { Navigation, Grid, Pagination } from "swiper/modules";
 import MotionX from "../ui/MotionX";
-import LoadingAnimation from "../ui/LoadingAnimation";
 import FadeIn from "../ui/fadeIn";
 
 const indoorImages = galleryImages.slice(14);
@@ -29,7 +28,6 @@ export default function Gallery() {
 
   const [activePopup, setActivePopup] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [loading, setLoading] = useState(true);
   const [loadIndoor, setLoadIndoor] = useState(false);
 
   useEffect(() => {
@@ -131,13 +129,11 @@ export default function Gallery() {
                       className="image h-full w-full"
                       onClick={() => setActivePopup(true)}
                     >
-                      {loading ? <LoadingAnimation /> : <></>}
+         
                       <Image
                         fill
-                        onLoad={() => setLoading(false)}
-                        className={`w-[inherit] h-[inherit] ${
-                          loading ? "hidden" : ""
-                        }`}
+                    
+                        className={`w-[inherit] h-[inherit]`}
                         src={image}
                         alt={`outdoor-image-${index}`}
                       />
@@ -215,8 +211,8 @@ export default function Gallery() {
         active={activePopup}
         images={
           active
-            ? outdoorImages.map((image) => image)
-            : indoorImages.map((image) => image)
+            ? outdoorImages.map((image) => image.src) // Convert StaticImageData to string
+            : indoorImages.map((image) => image.src) // Convert StaticImageData to string
         }
         index={activeIndex}
       />

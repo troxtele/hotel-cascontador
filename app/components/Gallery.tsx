@@ -210,8 +210,7 @@ export default function Gallery() {
       </div>
 
       {/* popup */}
-      <Image
-        fillPopup
+      <ImagePopup
         setActive={setActivePopup}
         active={activePopup}
         images={

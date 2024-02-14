@@ -28,7 +28,7 @@ export default function Contact() {
           <div className="left">
             <FadeIn>
               <div className="img">
-                {loading ? <Image fillLoading /> : <></>}
+                {loading ? <ImageLoading /> : <></>}
                 <Image
                   fill
                   onLoad={() => setLoading(false)}

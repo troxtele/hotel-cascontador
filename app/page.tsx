@@ -1,6 +1,6 @@
 "use client";
 import { useRef } from "react";
-import "./App.css";
+import "./app.css";
 import Navbar from "./components/Navbar";
 // import Hero from "./components/Hero";
 // import Gallery from "./components/Gallery";

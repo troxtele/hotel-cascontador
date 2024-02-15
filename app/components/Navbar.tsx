@@ -171,7 +171,8 @@ export default function Navbar({
           <div className="wrapper">
             <a href="/" className="logo block pt-6 px-6">
               <Image
-                fill
+                width={1600}
+                height={220}
                 className="w-full max-w-[12rem]"
                 src={navLogo}
                 alt="logo"

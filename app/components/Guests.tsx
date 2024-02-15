@@ -63,33 +63,30 @@ export default function Guests() {
               </div>
             </div>
 
-            {/* <div className="loading-animation h-20">
-              {loading ? <LoadingAnimation /> : <></>}
-            </div> */}
             {/* widgets */}
-            <div className={`widgets mt-12`}>
+            <div className={`widgets mt-12 relative`}>
               <div
-                className={`booking transition-all duration-300 ${
+                className={`booking transition-all w-full top-0 left-0 right-0 duration-300 ${
                   toggle === "booking"
                     ? "visible opacity-100"
-                    : "invisible opacity-0 pointer-events-none"
+                    : "invisible opacity-0 pointer-events-none absolute"
                 }`}
               >
                 <ElfsightWidget
-                  widgetId="471c2567-fc50-4d8b-b46c-0aef6e8f5276F"
+                  widgetId="471c2567-fc50-4d8b-b46c-0aef6e8f5276"
                   lazy
                   modern
                 />
               </div>
               <div
-                className={`airbnb transition-all transform -translate-y-full duration-300${
+                className={`airbnb transition-all w-full top-0 left-0 right-0 duration-300${
                   toggle === "airbnb"
                     ? "visible opacity-100"
-                    : "invisible opacity-0 pointer-events-none"
+                    : "invisible opacity-0 pointer-events-none absolute"
                 }`}
               >
                 <ElfsightWidget
-                  widgetId="0842e0c0-7524-46d9-b4ef-daae89153573F"
+                  widgetId="0842e0c0-7524-46d9-b4ef-daae89153573"
                   lazy
                   modern
                 />

@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
@@ -224,12 +227,4 @@ footer .links svg {
   border: 10px solid transparent;
   border-width: 8px 0 8px 10px;
   border-left-color: #fff;
-}
-
-.video {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: -1;
 }

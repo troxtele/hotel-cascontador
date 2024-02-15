@@ -23,7 +23,6 @@ export default function Contact() {
         </div>
 
         {/* contact info */}
-
         <div className="contact-info max-w-[70rem] m-auto grid md:grid-cols-2 gap-10 mt-12">
           <div className="left">
             <FadeIn>
